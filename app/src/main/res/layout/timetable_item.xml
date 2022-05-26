@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/acme"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:text="Thu 2" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_below="@id/date"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent" />
+
+    <LinearLayout
+        android:layout_width="412dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_marginLeft="2dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/layout_tiet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="100dp"
+                android:fontFamily="@font/acme"
+                android:layout_height="wrap_content"
+                android:text="Tiết"
+                android:textSize="35dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="1 -> 2"
+                android:textSize="35dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="3 -> 4"
+                android:textSize="35dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="5 -> 6"
+                android:textSize="35dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:text="7 -> 8"
+                android:textSize="35dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:fontFamily="@font/acme"
+                android:text="Môn học"
+                android:textSize="35dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/item_t1"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/acme"
+                android:layout_height="100dp"
+                android:gravity="fill_horizontal"
+                android:text="Subject"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/item_t2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:fontFamily="@font/acme"
+                android:gravity="fill_horizontal"
+                android:text="Subject"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/item_t3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:fontFamily="@font/acme"
+                android:gravity="fill_horizontal"
+                android:text="Subject"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/item_t4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="fill_horizontal"
+                android:fontFamily="@font/acme"
+                android:text="Subject"
+                android:textSize="30dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

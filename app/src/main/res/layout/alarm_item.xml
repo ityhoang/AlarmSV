@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/home_background"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="10dp"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/home_background"
+        app:cardCornerRadius="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ImageView
+                    android:background="@color/home_background"
+                    android:id="@+id/item_img"
+                    android:layout_width="120dp"
+                    android:layout_height="130dp"
+                    android:layout_margin="2dp"
+                    android:adjustViewBounds="true" />
+
+                <ToggleButton
+                    android:id="@+id/toggle_Alarm"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/bg_uitem"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textOff="On"
+                    android:textOn="Off" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:background="@color/home_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/item_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="@font/muiti_black"
+                    android:text="Tên sản phẩm"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"/>
+                <LinearLayout
+                    android:gravity="fill_horizontal"
+                    android:weightSum="4"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"
+                        android:text="Phòng: "
+                        android:fontFamily="@font/muiti_black"
+                        android:textColor="@color/textColor"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:id="@+id/item_room"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="Tiết: "
+                        android:fontFamily="@font/muiti_black"
+                        android:textColor="@color/textColor"
+                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content" />
+                    <TextView
+                        android:id="@+id/item_tiet"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1.25"
+                    android:layout_height="10dp">
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/muiti_black"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:text="Giáo Viên: "
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/muiti_black"
+                        android:textColor="@color/textColor"
+                        android:maxLines="4"
+                        android:singleLine="false"
+                        android:id="@+id/alarm_Name"
+                        android:layout_width="wrap_content"
+                        android:text="Ths.Nguyen Anh Tuan"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/muiti_black"
+                        android:textColor="@color/textColor"
+                        android:layout_width="wrap_content"
+                        android:text="Giờ :"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:textSize="18sp"
+                        android:layout_margin="5dp"
+                        android:fontFamily="@font/muiti_black"
+                        android:textColor="@color/textColor"
+                        android:id="@+id/time_Alarm"
+                        android:layout_width="match_parent"
+                        android:text="hellaosofoawoigw"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+                <View
+                    android:id="@+id/divider"
+                    android:layout_marginRight="88dp"
+                    android:layout_width="999999dp"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="#111" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

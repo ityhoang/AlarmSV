@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgr_add"
+    tools:context=".activity.AddAlarmActivity">
+    <Toolbar
+        android:id="@+id/toolBarAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme">
+
+        <TextView
+            android:id="@+id/activityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acme"
+            android:textSize="50dp"
+            android:layout_gravity="center"
+            android:text="Add Alarm"
+            android:textColor="@color/colorAccent" />
+    </Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <TimePicker
+            android:id="@+id/time_Picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner">
+
+        </TimePicker>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/acme"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Day"
+                    android:textStyle="bold"  />
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="5dp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/acme"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Teacher"
+                    android:textStyle="bold" />
+                <EditText
+                    android:id="@+id/name_Alarm"
+                    android:layout_width="226dp"
+                    android:fontFamily="@font/acme"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Nguyen Van A"
+                    android:inputType="textAutoComplete"
+                    android:paddingTop="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Subjects"
+                    android:fontFamily="@font/acme"
+
+                    android:textStyle="bold"
+                    android:id="@+id/textViewmh" />
+                <EditText
+                    android:id="@+id/name_monhoc"
+                    android:layout_width="224dp"
+                    android:fontFamily="@font/acme"
+
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="SubjectName"
+                    android:inputType="textAutoComplete"
+                    android:paddingTop="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/acme"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Room"
+                    android:textStyle="bold"
+                    android:id="@+id/textViewr" />
+
+                <EditText
+                    android:id="@+id/name_room"
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:hint="Room Name"
+                    android:fontFamily="@font/acme"
+
+                    android:inputType="textAutoComplete"
+                    android:paddingTop="5dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="150dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/acme"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Lesson"
+                    android:textStyle="bold"
+                    android:id="@+id/textViewth" />
+
+                <EditText
+                    android:gravity="center"
+                    android:id="@+id/name_tiethoc"
+                    android:fontFamily="@font/acme"
+
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Lesson Name"
+                    android:inputType="textAutoComplete"
+                    android:paddingTop="5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/addAlarm"
+            android:fontFamily="@font/acme"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/add" />
+    </LinearLayout>
+
+
+</LinearLayout>

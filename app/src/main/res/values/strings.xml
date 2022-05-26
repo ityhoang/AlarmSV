@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AlarmLock</string>
+    <string name="navigation_drawer_open"/>
+    <string name="navigation_drawer_close"/>
+    <string name="alarm_name">Alarm Name</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
+    <string name="Ringtone">Ringtone</string>
+    <string-array name="selection">
+        <item>MONDAY</item>
+        <item>TUESDAY</item>
+        <item>WEDNESDAY</item>
+        <item>THURSDAY</item>
+        <item>FRIDAY</item>
+        <item>SATURDAY</item>
+        <item>SUNDAY</item>
+    </string-array>
+</resources>
